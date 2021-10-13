@@ -56,7 +56,7 @@ def login_user(request):
                         # return HttpResponse("Student Login")
                         return HttpResponseRedirect('/studenthome/')
                     else:
-                        messages.error(request, "Invalid Login!")
+                        messages.error(request, 'Invalid Login!')
                         return redirect('login')
 
         else:
